@@ -1,0 +1,19 @@
+# Direct dependencies of DSRA (Python 3.11).
+torch==2.7.1
+transformers==4.52.4
+accelerate==1.7.0
+peft==0.15.2
+datasets==3.6.0
+numpy==2.2.6
+scikit-learn==1.7.0
+matplotlib==3.10.3
+tqdm==4.67.1
+packaging==25.0
+pyarrow==20.0.0
+nltk==3.9.1
+spacy==3.8.7
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+saf-datasets @ git+https://github.com/neuro-symbolic-ai/saf_datasets.git@b608bf74083ecc886d562adbef0491f6effdf62e
+
+# The annotation step also needs the NLTK WordNet and Brown corpora:
+#   python -m nltk.downloader wordnet brown
